@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.HoudaobutMapper">
+
+    <resultMap type="com.example.demo.bean.Houdaobut" id="houdaobu_t">
+        <id property="id" column="id"/>
+        <result property="kuanhao" column="kuanhao"/>
+        <result property="yanse" column="yanse"/>
+        <result property="hdriqi" column="hdriqi"/>
+        <result property="xs" column="xs"/>
+        <result property="s" column="s"/>
+        <result property="m" column="m"/>
+        <result property="l" column="l"/>
+        <result property="xl" column="xl"/>
+        <result property="xxl" column="xxl"/>
+        <result property="xxxl" column="xxxl"/>
+    </resultMap>
+
+    <insert id="insert">
+        insert into houdaobu_t(kuanhao,yanse,hdriqi,xs,s,m,l,xl,xxl,xxxl)
+        values (#{kuanhao},#{yanse},#{hdriqi},#{xs},#{s},#{m},#{l},#{xl},#{xxl},#{xxxl})
+    </insert>
+
+
+    <select id="selectByKuanhao" resultMap="houdaobu_t">
+        select
+            kuanhao,yanse,hdriqi,xs,s,m,l,xl,xxl,xxxl
+        from
+            houdaobu_t
+        where
+            kuanhao=#{kuanhao}
+    </select>
+
+</mapper>

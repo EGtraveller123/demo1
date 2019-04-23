@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.HoudaobuMapper">
+
+    <resultMap type="com.example.demo.bean.Houdaobu" id="houdaobu">
+        <id property="id" column="id"/>
+        <result property="kuanhao" column="kuanhao"/>
+        <result property="hdbshuliang" column="hdbshuliang"/>
+    </resultMap>
+
+    <select id="selectByKuanhao" resultMap="houdaobu">
+        select hdbshuliang from houdaobu where kuanhao=#{kuanhao}
+    </select>
+
+    <insert id="insert">
+        insert into hdbshuliang values (#{hdbshuliang})
+    </insert>
+</mapper>
