@@ -4,8 +4,6 @@ import com.example.demo.bean.User;
 import com.example.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -35,12 +33,12 @@ public class UserController {
         if(user!=null){
             session.setAttribute("user",user);
             //这里是主页面
-            modelAndView.setViewName("mjfs.html");
+            modelAndView.setViewName("/pages/mjfs.html");
             return modelAndView;
         }else{
             session.setAttribute("error","账号或密码错误!请重新输入");
         }
-        modelAndView.setViewName("login.html");
+        modelAndView.setViewName("/pages/login.html");
         return modelAndView;
     }
 }
