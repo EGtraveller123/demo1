@@ -20,9 +20,16 @@ public class HoudaobuController {
     public List<Houdaobu> selectByKuanhao(@RequestParam("kuanhao") String kuanhao){
         return houdaobuService.selectByKuanhao(kuanhao);
     }
-    @RequestMapping(value = "/insert",method = RequestMethod.GET)
-    public int update(@RequestParam("kuanhao") String kuanhao,
+
+    @RequestMapping(value = "/update",method = RequestMethod.GET)
+    public int updateHoudaobu(@RequestParam("kuanhao") String kuanhao,
                       @RequestParam("hdbshuliang") Integer hdbshuliang){
+        return houdaobuService.update(kuanhao,hdbshuliang);
+    }
+
+    @RequestMapping(value = "/insert",method = RequestMethod.GET)
+    public int insertHoudaobu(@RequestParam("kuanhao") String kuanhao,
+                              @RequestParam("hdbshuliang") Integer hdbshuliang){
         return houdaobuService.insert(kuanhao,hdbshuliang);
     }
 }

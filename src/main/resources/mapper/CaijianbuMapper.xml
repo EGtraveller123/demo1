@@ -15,7 +15,11 @@
         select cjbshuliang from caijianbu where kuanhao=#{kuanhao}
     </select>
 
+    <update id="update">
+        update set caijianbu set cjbshuliang=#{cjbshuliang} where kuanhao=#{kuanhao}
+    </update>
+
     <insert id="insert">
-        insert into cjbshuliang values (#{cjbshuliang})
+        insert into caijianbu(kuanhao,cjbshuliang) values (kuanhao=#{kuanhao},cjbshuliang=#{cjbshuliang})
     </insert>
 </mapper>

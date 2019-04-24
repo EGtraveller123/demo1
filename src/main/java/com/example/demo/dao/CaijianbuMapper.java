@@ -16,5 +16,10 @@ public interface CaijianbuMapper {
      * 更新
      * @param caijianbu
      */
+    int update(Caijianbu caijianbu);
+
+    /**
+     * @param caijianbu
+     */
     int insert(Caijianbu caijianbu);
 }

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -21,9 +22,9 @@ public class CaijianbuController {
         return caijianbuService.selectByKuanhao(kuanhao);
     }
 
-    @RequestMapping(value = "/insert", method = RequestMethod.GET)
-    public int insertCaijian(@RequestParam("kuanhao") String kuanhao,
-                             @RequestParam("cjbshuliang") Integer cjbshuliang) {
+    @RequestMapping(value = "/update", method = RequestMethod.GET)
+    public int updateCaijianbu(@RequestParam("cjbshuliang") Integer cjbshuliang,
+                               @RequestParam("kuanhao") String kuanhao) {
 //        int update = caijianbuService.update(kuanhao, cjbshuliang);
 //        if(update>1){
 //            return 1;
@@ -32,6 +33,12 @@ public class CaijianbuController {
 //        }
 //
 //    }
-        return caijianbuService.insert(kuanhao, cjbshuliang);
+        return caijianbuService.update(cjbshuliang,kuanhao);
+    }
+
+    @RequestMapping(value = "/insert",method = RequestMethod.GET)
+    public int insertCaijian(@RequestParam("kuanhao") String kuanhao,
+                             @RequestParam("cjbshuliang") Integer cjbshuliang){
+        return caijianbuService.insert(kuanhao,cjbshuliang);
     }
 }

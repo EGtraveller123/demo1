@@ -18,5 +18,12 @@ public interface HoudaobuMapper {
      * 更新
      * @param houdaobu
      */
+    int update(Houdaobu houdaobu);
+
+    /**
+     *
+     * @param houdaobu
+     * @return
+     */
     int insert(Houdaobu houdaobu);
 }

@@ -16,6 +16,13 @@ public class CaijianbuService {
         return caijianbuMapper.selectByKuanhao(kuanhao);
     }
 
+    public int update(Integer cjbshuliang,String kuanhao){
+        Caijianbu caijianbu = new Caijianbu();
+        caijianbu.setCjbshuliang(cjbshuliang);
+        caijianbu.setKuanhao(kuanhao);
+        return caijianbuMapper.update(caijianbu);
+    }
+
     public int insert(String kuanhao,Integer cjbshuliang){
         Caijianbu caijianbu = new Caijianbu();
         caijianbu.setKuanhao(kuanhao);

@@ -15,7 +15,11 @@
         select hdbshuliang from houdaobu where kuanhao=#{kuanhao}
     </select>
 
+    <update id="update">
+        update houdaobu set hdbshuliang=#{hdbshuliang} where kuanhap=#{kuanhao}
+    </update>
+
     <insert id="insert">
-        insert into hdbshuliang values (#{hdbshuliang})
+        insert into houdaobu(kuanhao,hdbshuliang) values (kuanhao=#{kuanhao},hdbshuliang=#{hdbshuliang})
     </insert>
 </mapper>

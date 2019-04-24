@@ -16,6 +16,13 @@ public class HoudaobuService {
         return houdaobuMapper.selectByKuanhao(kuanhao);
     }
 
+    public int update(String kuanhao,Integer hdbshuliang){
+        Houdaobu houdaobu = new Houdaobu();
+        houdaobu.setKuanhao(kuanhao);
+        houdaobu.setHdbshuliang(hdbshuliang);
+        return houdaobuMapper.update(houdaobu);
+    }
+
     public int insert(String kuanhao,Integer hdbshuliang){
         Houdaobu houdaobu = new Houdaobu();
         houdaobu.setKuanhao(kuanhao);
