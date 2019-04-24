@@ -60,7 +60,6 @@
     <!-- /.social-auth-links -->
 
     <a href="#">忘记密码</a><br>
-    <a href="pages/examples/register.html" class="text-center">注册账号</a>
 
   </div>
   <!-- /.login-box-body -->
@@ -152,7 +151,7 @@
               }
               $.ajax({
                 type:"POST",
-                url:"account/login",
+                url:"/login",
                 dataType:"json",
                 contentType:"application/json",
                 data:JSON.stringify(data),
