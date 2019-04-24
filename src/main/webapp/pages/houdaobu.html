@@ -7,18 +7,18 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
   <!-- DataTables -->
-  <link rel="stylesheet" href="../../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -70,7 +70,7 @@
                     <a href="#">
                       <div class="pull-left">
                         <!-- User Image -->
-                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                       </div>
                       <!-- Message title and timestamp -->
                       <h4>
@@ -155,14 +155,14 @@
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
               <span class="hidden-xs">Admin</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   Administer
@@ -210,7 +210,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Admin</p>
@@ -230,25 +230,29 @@
       </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">名锦服饰</li>
-        <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href=""><i class="fa fa-link"></i> <span>搜索</span></a></li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>基础数据</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="kehudata.html">客户信息管理</a></li>
-            <li><a href="huowudata.html">货物信息管理</a></li>
-          </ul>
-        </li>
-      </ul>
-      <!-- /.sidebar-menu -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">名锦服饰</li>
+            <!-- Optionally, you can add icons to the links -->
+            <!--li class="active"><a href=""><i class="fa fa-link"></i> <span>搜索</span></a></li-->
+            <li class="active"><a href="houdaobu.html"><i class="houdao"></i> <span>后道部</span></a></li>
+            <li class="active"><a href="caijianbu.html"><i class="caijian"></i> <span>裁剪部</span></a></li>
+            <li class="active"><a href="rucang.html"><i class="rucang"></i> <span>入仓</span></a></li>
+            <li class="active"><a href="yewubu.html"><i class="yewu"></i> <span>业务部</span></a></li>
+            <!--<li class="treeview">
+              <a href="#"><i class="fa fa-link"></i> <span>基础数据</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="houdaobu.html">客户信息管理</a></li>
+                <li><a href="caijianbu.html">货物信息管理</a></li>
+              </ul>
+            </li>-->
+        </ul>
+        <!-- /.sidebar-menu -->
     </section>
-    <!-- /.sidebar -->
+      <!-- /.sidebar -->
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
@@ -884,41 +888,41 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- DataTables -->
-<script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <!-- SlimScroll -->
-<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
+<script src="../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
+<script src="../dist/js/demo.js"></script>
 <!-- page script -->
 <script type="text/javascript"
-        src="../../dist/js/jquery-ui.min.js"></script>
+        src="../dist/js/jquery-ui.min.js"></script>
 <script type="text/javascript"
-        src="../../dist/js/bootstrapValidator.min.js"></script>
+        src="../dist/js/bootstrapValidator.min.js"></script>
 <script type="text/javascript"
-        src="../../dist/js/bootstrap-table.min.js"></script>
+        src="../dist/js/bootstrap-table.min.js"></script>
 <script type="text/javascript"
-        src="../../dist/js/bootstrap-table-zh-CN.min.js"></script>
+        src="../dist/js/bootstrap-table-zh-CN.min.js"></script>
 <script type="text/javascript"
-        src="../../dist/js/jquery.md5.js"></script>
+        src="../dist/js/jquery.md5.js"></script>
 <script type="text/javascript"
-        src="../../dist/js/jquery.mloading.js"></script>
+        src="../dist/js/jquery.mloading.js"></script>
 <script type="text/javascript"
-        src="../../dist/js/mainPage.js"></script>
+        src="../dist/js/mainPage.js"></script>
 <script type="text/javascript"
-        src="../../dist/js/ajaxfileupload.js"></script>
+        src="../dist/js/ajaxfileupload.js"></script>
 <script type="text/javascript"
-        src="../../dist/js/bootstrap-datetimepicker.min.js"></script>
+        src="../dist/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript"
-        src="../../dist/js/bootstrap-datetimepicker.zh-CN.js"></script>
+        src="../dist/js/bootstrap-datetimepicker.zh-CN.js"></script>
 <script>
     var search_type_customer = "none";
     var search_keyWord = "";
@@ -987,29 +991,29 @@
                     columns : [
                         {
                             field : 'id',
-                            title : '客户ID'
+                            title : '款号'
                             //sortable: true
                         },
                         {
                             field : 'name',
-                            title : '客户名称'
+                            title : '客户'
                         },
                         {
                             field : 'personInCharge',
-                            title : '负责人'
+                            title : '实际裁剪数量'
                         },
                         {
                             field : 'tel',
-                            title : '联系电话'
+                            title : '后道'
                         },
                         {
                             field : 'address',
-                            title : '地址',
+                            title : '面料',
                             visible : false
                         },
                         {
                             field : 'email',
-                            title : '电子邮件',
+                            title : '出货日期',
                             visible : false
                         },
                         {
@@ -1023,16 +1027,13 @@
                             },
                             events : {
                                 // 操作列中编辑按钮的动作
-                                'click .edit' : function(e, value,
-                                                         row, index) {
+                                'click .edit' : function(e, value, row, index) {
                                     selectID = row.id;
                                     rowEditOperation(row);
                                 },
-                                'click .delete' : function(e,
-                                                           value, row, index) {
+                                'click .delete' : function(e, value, row, index) {
                                     selectID = row.id;
-                                    $('#deleteWarning_modal').modal(
-                                        'show');
+                                    $('#deleteWarning_modal').modal('show');
                                 }
                             }
                         } ],
