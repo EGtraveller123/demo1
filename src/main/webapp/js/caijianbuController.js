@@ -10,7 +10,6 @@ $(function() {
     searchAction();
     goodsListInit();
     bootstrapValidatorInit();
-
     addGoodsAction();
     editGoodsAction();
     deleteGoodsAction();
